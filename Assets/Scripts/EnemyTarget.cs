@@ -14,8 +14,10 @@ public class EnemyTarget : MonoBehaviour
             Die();
         }
     }
-    void Die()
+    private void Die()
     {
         Destroy(gameObject);
+        GenereteEnemies.spawnSecond--;
+        Debug.Log("spawns:" + GenereteEnemies.spawnSecond);
     }
 }

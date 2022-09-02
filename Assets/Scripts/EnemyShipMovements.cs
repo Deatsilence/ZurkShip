@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyShipMovements : MonoBehaviour
 {
+    public float shipSpeed = 24F;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +14,13 @@ public class EnemyShipMovements : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //GetComponent<Rigidbody>().AddForce(24F, 0F, 0F);
+        GetComponent<Rigidbody>().AddForce(shipSpeed, 0F, 0F);
+
+        if (gameObject.transform.position.x >= 450)
+        {
+            Destroy(gameObject);
+
+            GenereteEnemies.spawnSecond--;
+        }
     }
 }
