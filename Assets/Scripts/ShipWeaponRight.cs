@@ -27,7 +27,7 @@ public class ShipWeaponRight : MonoBehaviour
     RaycastHit hitInfo;
     float accumlatedTime;
     List<Bullet> bullets = new List<Bullet>();
-    float maxLifetime = 0.25F;
+    float maxLifetime = 0.15F;
 
     Vector3 GetPosition(Bullet bullet)
     {

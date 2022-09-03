@@ -64,6 +64,7 @@ public class FireSystem : MonoBehaviour
             {
                 target.TakeDamage(damage);
                 Debug.Log(hit.transform.name + " " + target.health + " " + damage);
+                ScoreManager.score++;
             }
         }
     }

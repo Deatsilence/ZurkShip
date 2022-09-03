@@ -7,7 +7,6 @@ public class GenereteEnemies : MonoBehaviour
     public Transform[] spawnPoints;
     public GameObject[] enemyPrefabs;
 
-    public static int spawnSecond = 0;
     private static int controlSamePoint = 0;
 
     // Start is called before the first frame update
@@ -44,7 +43,6 @@ public class GenereteEnemies : MonoBehaviour
 
             Instantiate(enemyPrefabs[randEnemy], spawnPoints[randSpawnPoint].position, transform.rotation);
             StartCoroutine(ExecuteAfterTime());
-            spawnSecond++;
         //}
 
     }
