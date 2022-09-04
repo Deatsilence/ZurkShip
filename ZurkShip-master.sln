@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{B671F373-1A14-6216-0383-086F02061B34}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VFXGraph.OutputEventHandlers", "VFXGraph.OutputEventHandlers.csproj", "{0DA38B4B-F90E-C08A-2ED4-F5DBCF78A7AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VFXGraph.OutputEventHandlers.Editor", "VFXGraph.OutputEventHandlers.Editor.csproj", "{4D861AB9-D62E-B51E-B8E9-B0CCA7458D6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +17,14 @@ Global
 		{B671F373-1A14-6216-0383-086F02061B34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B671F373-1A14-6216-0383-086F02061B34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B671F373-1A14-6216-0383-086F02061B34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DA38B4B-F90E-C08A-2ED4-F5DBCF78A7AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DA38B4B-F90E-C08A-2ED4-F5DBCF78A7AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DA38B4B-F90E-C08A-2ED4-F5DBCF78A7AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DA38B4B-F90E-C08A-2ED4-F5DBCF78A7AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D861AB9-D62E-B51E-B8E9-B0CCA7458D6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D861AB9-D62E-B51E-B8E9-B0CCA7458D6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D861AB9-D62E-B51E-B8E9-B0CCA7458D6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D861AB9-D62E-B51E-B8E9-B0CCA7458D6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

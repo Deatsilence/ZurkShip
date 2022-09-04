@@ -6,7 +6,7 @@ public class EnemyShipMovements : MonoBehaviour
 {
     public GameOverScript gameOver;
     public float shipSpeed = 24F;
-    private int EnemyPassedCount = 0;
+    public static int EnemyPassedCount = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,9 +21,14 @@ public class EnemyShipMovements : MonoBehaviour
         if (gameObject.transform.position.x >= 550)
         {
             Destroy(gameObject);
+            Debug.Log("ENEMY COUNT : "+ EnemyPassedCount);
             EnemyPassedCount++;
-            //if(EnemyPassedCount==3)
-
+            
+            if (EnemyPassedCount == 3)
+            {
+                Debug.Log("gameover");
+                GameOver();
+            }
         }
     }
     public void GameOver()
