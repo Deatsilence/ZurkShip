@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyShipMovements : MonoBehaviour
 {
-    public GameOverScript gameOver;
+    //private GameOverScript gameOver;
     public float shipSpeed = 24F;
     public static int EnemyPassedCount = 0;
     // Start is called before the first frame update
@@ -21,18 +21,8 @@ public class EnemyShipMovements : MonoBehaviour
         if (gameObject.transform.position.x >= 550)
         {
             Destroy(gameObject);
-            Debug.Log("ENEMY COUNT : "+ EnemyPassedCount);
             EnemyPassedCount++;
-            
-            if (EnemyPassedCount == 3)
-            {
-                Debug.Log("gameover");
-                GameOver();
-            }
+            //Debug.Log("ENEMY COUNT : " + EnemyPassedCount);
         }
-    }
-    public void GameOver()
-    {
-        gameOver.Setup(ScoreManager.score);
     }
 }

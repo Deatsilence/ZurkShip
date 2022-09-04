@@ -56,12 +56,12 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Samples\Visual Effect Graph\13.1.8\OutputEvent Helpers\Editor\VFXOutputEventRigidBodyEditor.cs" />
     <Compile Include="Assets\Samples\Visual Effect Graph\13.1.8\OutputEvent Helpers\Editor\VFXOutputEventCinemachineCameraShakeEditor.cs" />
-    <Compile Include="Assets\Samples\Visual Effect Graph\13.1.8\OutputEvent Helpers\Editor\VFXOutputEventHandlerEditor.cs" />
-    <Compile Include="Assets\Samples\Visual Effect Graph\13.1.8\OutputEvent Helpers\Editor\VFXOutputEventPrefabSpawnEditor.cs" />
-    <Compile Include="Assets\Samples\Visual Effect Graph\13.1.8\OutputEvent Helpers\Editor\VFXOutputEventPlayAudioEditor.cs" />
     <Compile Include="Assets\Samples\Visual Effect Graph\13.1.8\OutputEvent Helpers\Editor\VFXOutputEventUnityEventEditor.cs" />
+    <Compile Include="Assets\Samples\Visual Effect Graph\13.1.8\OutputEvent Helpers\Editor\VFXOutputEventPrefabSpawnEditor.cs" />
+    <Compile Include="Assets\Samples\Visual Effect Graph\13.1.8\OutputEvent Helpers\Editor\VFXOutputEventRigidBodyEditor.cs" />
+    <Compile Include="Assets\Samples\Visual Effect Graph\13.1.8\OutputEvent Helpers\Editor\VFXOutputEventPlayAudioEditor.cs" />
+    <Compile Include="Assets\Samples\Visual Effect Graph\13.1.8\OutputEvent Helpers\Editor\VFXOutputEventHandlerEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Samples\Visual Effect Graph\13.1.8\OutputEvent Helpers\Editor\Unity.VisualEffectGraph.OutputEventHandlers.asmdef" />

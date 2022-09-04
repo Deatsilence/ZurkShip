@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637979050396188127
+      ticks: 637979059630000000
     m_Hash: 2744347625
   m_LockFileStatus:
     m_FilePath: C:/Users/mert_/Downloads/ZurkShip-master/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637979050396248119
+      ticks: 637979059630000000
     m_Hash: 1946157617
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
