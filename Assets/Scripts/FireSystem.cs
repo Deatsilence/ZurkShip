@@ -9,6 +9,7 @@ public class FireSystem : MonoBehaviour
 {
     public float damage = 10F;
     public float range = 100F;
+    public static float tempSpeed;
     ShipWeapon weaponLeft;
     ShipWeaponRight weaponRight;
     AudioSource audioSource;
@@ -60,12 +61,27 @@ public class FireSystem : MonoBehaviour
         {
 
             EnemyTarget target = hit.transform.GetComponent<EnemyTarget>();
+            PrizeTarget targetPrize = hit.transform.GetComponent<PrizeTarget>();
+
             if (target != null)
             {
                 target.TakeDamage(damage);
-                Debug.Log(hit.transform.name + " " + target.health + " " + damage);
                 ScoreManager.score++;
+                if (ScoreManager.score % 10 == 0 && ScoreManager.score != 0)
+                {
+                    EnemyShipMovements.shipSpeed += 2;
+                    Debug.Log("speed: " + EnemyShipMovements.shipSpeed);
+                }   
             }
+            if (targetPrize != null)
+            {
+                Debug.Log("inside prize");
+                targetPrize.TakeDamage(damage);
+                tempSpeed = EnemyShipMovements.shipSpeed;
+                EnemyShipMovements.shipSpeed = 12;
+                Debug.Log("speed: " + EnemyShipMovements.shipSpeed);
+            }
+
         }
     }
 }

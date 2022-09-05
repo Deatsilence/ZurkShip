@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyShipMovements : MonoBehaviour
 {
     //private GameOverScript gameOver;
-    public float shipSpeed = 24F;
+    public static float shipSpeed = 24F;
     public static int EnemyPassedCount = 0;
     // Start is called before the first frame update
     void Start()
