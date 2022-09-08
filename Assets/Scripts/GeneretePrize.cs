@@ -22,13 +22,13 @@ public class GeneretePrize : MonoBehaviour
 
     IEnumerator ExecuteAfterTime()
     {
-        yield return new WaitForSeconds(15F);
+        yield return new WaitForSeconds(20F);
 
         //if (spawnSecond < 5)
         //{
         //Code to execute after the delay
-        if (EnemyShipMovements.shipSpeed == 12)
-            EnemyShipMovements.shipSpeed = FireSystem.tempSpeed;
+
+        EnemyShipMovements.shipSpeed = FireSystem.tempSpeed;
 
         int randSpawnPoint = Random.Range(0, spawnPointsPrizes.Length);
         int randSpawnPointNew = Random.Range(0, spawnPointsPrizes.Length);

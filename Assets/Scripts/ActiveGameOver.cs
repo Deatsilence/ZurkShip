@@ -13,8 +13,9 @@ public class ActiveGameOver : MonoBehaviour
         {
             //Time.timeScale = 0;
             GameOverUI.SetActive(true);
-
         }
+        if (GameOverScript.IsOpenRestartUI == true)
+            GameOverUI.SetActive(false);
 
     }
 }

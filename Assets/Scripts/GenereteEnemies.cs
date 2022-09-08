@@ -24,7 +24,7 @@ public class GenereteEnemies : MonoBehaviour
 
     IEnumerator ExecuteAfterTime()
     {
-        yield return new WaitForSeconds(3F);
+        yield return new WaitForSeconds(2F);
 
         //if (spawnSecond < 5)
         //{
